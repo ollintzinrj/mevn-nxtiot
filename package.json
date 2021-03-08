@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/server.js",
-    "webpack": "webpack --mode=development"
+    "webpack": "webpack --mode=development",
+    "start": "node ./src/server.js",
   },
   "keywords": [],
   "author": "OllintzinRJ",
