@@ -1,5 +1,4 @@
-# mevn-nxtiot
-## Para instalar y ejecutar este proyecto
+# Para instalar y ejecutar este proyecto
 
 1. Descargar el repositorio en el link https://github.com/ollintzinrj/mevn-nxtiot.git
 2. Ejecutar la terminal y navegar hasta la carpeta mevn-nxtiot, que es donde se descargo el repositorio.
