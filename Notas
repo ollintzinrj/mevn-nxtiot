@@ -1,0 +1,87 @@
+BACKEND
+
+1. Crear el servidor con un proyecto de node 
+$ npm init --yes
+
+2. Crear archivos de configuración de midlewares
+- .babelrc 
+- webpack.config.js
+
+3. Crear la estructura en /src 
+- server.js 
+- /routes
+- /models
+- /public - archivos convertidos del frontend
+- /app - fontend
+- /config - para Mongo
+
+4. Instalar frameword express y agregarlo en server.js
+$ npm install express
+Prueba: $ node src/server.js
+
+5. Configurar la carpeta publica para mostrar en el servidor
+
+6. Instalación y configuración de Middlewares 
+- A: Nodemon para reiniciar el servidor
+$ npm install nodemon
+Agregarlo en el package.json para ejecutarlo
+$ npm run dev
+
+- B: Morgan para saber qué peticiones se han hecho al servidor
+$ npm install morgan
+Agregarlo al server y usarlo
+
+- C: Json con el bodyparser que esta integrado en express para procesar los datos en json de las Rest API
+Usarlo
+
+7. Configurar Mongo y Mongoose
+A: Instalar Mongoose que es una biblioteca para modelar los esquemas de Mongo 
+$ npm install mongoose 
+
+B: Instalar MongoDB con homebrew
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/
+
+Iniciar Mongo en Winodws
+$ sudo service mongod start 
+
+Iniciar Mongo en MacOs
+$ brew services start mongodb-community@4.4
+$ brew services restart mongodb-community
+
+En /config crear un archivo donde se encuentre la configuración a exportar de Mongo
+
+8. Crear el modelo o esquema de Mongo
+Que contenga id, text, source y sourceUrl (especificación de NXTIoT)
+
+9. Configurar las rutas
+- Crear un archivo donde se define y exporta el CRUD para cada item
+- Importar el modelo 
+
+FRONTEND
+
+1. Instalar webpack y webpack-cli en modo de desarrollo, para traducir VUE
+$ npm install webpack
+$ npm install webpack -D
+$ npm i webpack-cli -D
+Agregarlo al package y ejecutar
+$ npm run webpack
+Configurar las reglas que debe utilizar webpack en el config 
+
+2. Instalar Babel para traspilar codigo más moderno de JS
+$ npm install babel-loader babel-preset-env vue-loader vue-template-compiler -D
+-- Error de babel en core https://github.com/babel/babel/issues/8599 
+$ npm install -D babel-loader @babel/core @babel/preset-env webpack
+
+3. Instalar VUE 
+$ npm install vue -D
+$ npm install vue-loader vue-template-compiler -D 
+
+4. Instalar Bootstrap desde CDN
+
+5. Crear en /public/index.html el div para montar allí la aplicación
+
+6. Crear componentes
+
+7. Instalar complementos para obtener datos externos 
+$ npm i vue-resource 
+Integrarlo en la /app/main.js
